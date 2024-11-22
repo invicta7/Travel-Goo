@@ -10,7 +10,7 @@ html, body{
     margin: 10px;
     height: 100vh;
     width: 100%;
-    background-image: url(!assets/stefan-stefancik-6whwCHgsMiA-unsplash\ 1.png);
+    background-image: url(assets/stefan-stefancik-6whwCHgsMiA-unsplash\ 1.png);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
