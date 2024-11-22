@@ -1,0 +1,1735 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+
+html, body{
+    margin: 10px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/stefan-stefancik-6whwCHgsMiA-unsplash\ 1.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: rgb(192, 214, 255);*/
+
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background: rgb(99, 99, 209);*/
+    position: relative;
+    height: 70px;
+    
+
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url("/assets/Travel\ Goo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.star{
+    margin-left: 300px;
+}
+
+.star:hover{
+    background: green;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    background: green;
+    transition: all 0.3s ease;
+}
+
+.home{
+    margin-left: 300px;
+}
+
+
+
+
+
+
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #545454;
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width:960px) {
+    
+    nav ul{
+        display: flex;
+        position: absolute;
+        top: 70px;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background:#3a1ce6;
+        gap: 50px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    .star{
+        margin-right: 320px;
+    }
+
+    .home{
+        margin-right: 330px;
+    }
+
+    nav ul li{
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon i{
+        display: block;
+        cursor: pointer;
+    }
+
+    #menuList{
+        transition: all 0.5s;
+    }
+
+
+
+   .hero-section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-left:0;
+   }
+
+   .heading{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    margin-left:0;
+   }
+
+   
+
+}
+
+
+
+.hero-section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.heading{
+    display: flex;
+    margin-top: 30vh;
+    width: 50%;
+    height: 20vh;
+    background-image: url("/assets/Your\ Imagination\ Is\ Your\ Only\ Limit.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 300px;
+    position: absolute;
+
+
+
+    
+
+}
+
+.paragraph{
+    display: flex;
+    margin-top: 60vh;
+    width: 50%;
+    height: 10vh;
+    background-image: url("/assets/We\ always\ try\ to\ make\ our\ customer\ Happy.\ We\ provide\ all\ kind\ of\ facilities.\ Your\ Satisfaction\ is\ our\ main\ priority.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-left: 300px;
+
+}
+
+.discover{
+    display: flex;
+    
+    padding: 10px 30px;
+    height: 5vh;
+    width: 14%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background:green;
+    color: #fff;
+    position: absolute;
+    margin-top: 80vh;
+    margin-left: 500px;
+    justify-content: center;
+    
+}
+
+.discover a{
+    text-decoration: none;
+    color: #fff;
+    z-index: 2;
+}
+
+.discover::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(128, 98, 0);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.discover:hover{
+    color: #fff;
+    
+}
+
+.discover:hover:after{
+    width: 100%;
+}
+/*our-service-section*/
+
+.our-service-section-wrap{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.service-header{
+    margin: 60px;
+    display: flex;
+    width: 60%;
+    height: 10vh;
+    position: absolute;
+    /*border: 1px solid red;*/
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+    font-size: 2rem;
+}
+
+
+.our-service-container{
+    display: flex;
+    width: 90%;
+    height: 40vh;
+    /*border: 1px solid green;*/
+    margin-top: 40vh;
+    margin-left: 100px;
+    position: absolute;
+justify-content: space-between;
+}
+
+.booking{
+    display: flex;
+    width: 30%;
+    height: 40vh;
+    /*border: 1px solid pink;*/
+    position: relative;
+    background: #f9f9f9;
+    
+
+}
+
+.hotel-booking{
+    display: flex;
+    width: 30%;
+    height: 40vh;
+    /*border: 1px solid pink;*/
+    position: relative;
+    background: #fff;
+}
+
+.tour-plan{
+    display: flex;
+    width: 30%;
+    height: 40vh;
+    /*border: 1px solid pink;*/
+    position: relative;
+    background: #f9f9f9;
+}
+
+.ticket-icon{
+    display: flex;
+    margin: 10px;
+    width: 10%;
+    height: 5vh;
+   /* border: 1px solid black;*/
+    background-image: url("/assets/ticket-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ticket-booking{
+    display: flex;
+    width: 40%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-top: 60px;
+    margin-left: 10px;
+    position: absolute;
+    background-image: url("/assets/Ticket\ Booking.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ticket-text{
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-top: 150px;
+    margin-left: 10px;
+    position: absolute;
+    background-image: url("/assets/We\ book\ all\ kind\ of\ national\ or\ international\ ticket\ for\ your\ destinaion..png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.hotel-icon{
+    display: flex;
+    margin: 10px;
+    width: 10%;
+    height: 5vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/carbon_hotel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.h-booking{
+    display: flex;
+    width: 40%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-top: 60px;
+    margin-left: 10px;
+    position: absolute;
+    background-image: url("/assets/Hotel\ Booking.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hotel-text{
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-top: 150px;
+    margin-left: 10px;
+    position: absolute;
+    background-image: url("/assets/You\ can\ easily\ book\ your\ according\ to\ your\ budget\ hotel\ by\ our\ website..png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.tour-icon{
+    display: flex;
+    margin: 10px;
+    width: 10%;
+    height: 5vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/cil_paper-plane.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tour-booking{
+    display: flex;
+    width: 40%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-top: 60px;
+    margin-left: 10px;
+    position: absolute;
+    background-image: url("/assets/Tour\ Plan.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tour-text{
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-top: 150px;
+    margin-left: 10px;
+    position: absolute;
+    background-image: url("/assets/We\ provide\ you\ the\ best\ plan\ within\ a\ short\ time\ explore\ more..png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.statistics-wrap{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  /*  border: 1px solid black;*/
+    background-image: url("/assets/world_map_PNG28\ 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.statistics-heading{
+    display: flex;
+    width: 40%;
+    height: 10vh;
+/*    border: 1px solid red;*/
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30%;
+    background-image: url("/assets/We\ always\ try\ to\ give\ you\ the\ best\ service.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.statistics-text{
+    display: flex;
+    width: 40%;
+    height: 10vh;
+  /*  border: 1px solid pink;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 30%;
+    background-image: url("/assets/We\ always\ try\ to\ make\ our\ customer\ Happy.\ We\ provide\ all\ kind\ of\ facilities.\ Your\ Satisfaction\ is\ our\ main\ priority..png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.statistics-container{
+    display: flex;
+    width: 80%;
+    height: 40vh;
+    /*border: 1px solid purple;*/
+    position: relative;
+    margin-top: 300px;
+    margin-left: 10%;
+    justify-content: space-between;
+    background: #f9f9f9;
+}
+
+.years-of-experience{
+    display: flex;
+    width: 20%;
+    height: 40vh;
+    /*border: 1px solid gold;*/
+    background: #fff;
+}
+
+
+.happy-travellers{
+    display: flex;
+    width: 20%;
+    height: 40vh;
+    /*border: 1px solid gold;*/
+    background: #fff;
+}
+
+.places-visited{
+    display: flex;
+    width: 20%;
+    height: 40vh;
+    /*border: 1px solid gold;*/
+    background: #fff;
+}
+
+.travel-history{
+    display: flex;
+    width: 20%;
+    height: 40vh;
+   /* border: 1px solid gold;*/
+   background: #fff;
+}
+
+
+
+.year-icon{
+    display: flex;
+    width: 5%;
+    height: 5vh;
+    /*border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5%;
+    background-image: url("/assets/simple-line-icons_calender.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.year-stat{
+    display: flex;
+    width: 8%;
+    height: 5vh;
+/*    border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-image: url("/assets/15+.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.year-text{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+  /*  border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 4%;
+    background-image: url("/assets/Years\ of\ Experience.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.travellers-icon{
+    display: flex;
+    width: 5%;
+    height: 5vh;
+/*    border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5%;
+    background-image: url("/assets/ant-design_bar-chart-outlined.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.travellers-stat{
+    display: flex;
+    width: 8%;
+    height: 5vh;
+  /*  border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-image: url("/assets/15k+.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.travellers-text{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+/* border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 4%;
+    background-image: url("/assets/Happy\ Travellers.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.places-icon{
+    display: flex;
+    width: 5%;
+    height: 5vh;
+  /*  border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5%;
+    background-image: url("/assets/carbon_map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.places-stat{
+    display: flex;
+    width: 8%;
+    height: 5vh;
+/*    border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-image: url("/assets/650+.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.places-text{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+  /*  border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 4%;
+    background-image: url("/assets//Places\ Visited.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.history-icon{
+    display: flex;
+    width: 5%;
+    height: 5vh;
+/*    border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5%;
+    background-image: url("/assets/gridicons_history.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.history-stat{
+    display: flex;
+    width: 8%;
+    height: 5vh;
+  /*  border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-image: url("/assets/2k+.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.history-text{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+/*    border: 1px solid blue;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 4%;
+    background-image: url("/assets/Travel\ History.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.destination-wrap{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   /*border: 1px solid black;*/
+}
+
+.destination-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   /*border: 1px solid black;*/
+
+}
+
+.destination-grid-map{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    height: 100vh;
+   /*border: 1px solid black;*/
+    background-image: url("/assets/world_map_PNG28\ 2.png");
+    position: relative;
+}
+
+.grid-image{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    /*border: 1px solid black;*/
+    margin-left: 10%;
+    position: absolute;
+    margin-left: 60%;
+
+}
+
+.thailand-wrap{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+.thailand-image{
+    display: flex;
+    width: 30%;
+    height: 20vh;
+   /*border: 1px solid black;*/
+    background-image: url("/assets/thailand.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thailand-text{
+    display: flex;
+    width: 20%;
+    height: 20vh;
+  /*border: 1px solid black;*/
+    background-image: url("/assets/Thailandtext.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.thailand-spot{
+    display: flex;
+    width: 30%;
+    height: 20vh;
+   /*border: 1px solid black;*/
+    background-image: url("/assets/20+\ Spots\ 2D\ &\ 3N.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.thailand-icon{
+    display: flex;
+    width: 10%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/ic_round-navigate-next.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.indonesia-wrap{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    margin-top: 120px;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.indonesia-image{
+    display: flex;
+    width: 30%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/indonesia-coutry.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.indonesia-text{
+    display: flex;
+    width: 20%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/Indonesia.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.indonesia-spot{
+    display: flex;
+    width: 30%;
+    height: 20vh;
+   /*border: 1px solid black;*/
+    background-image: url("/assets/20+\ Spots\ 2D\ &\ 3N.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.indonesia-icon{
+    display: flex;
+    width: 10%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/ic_round-navigate-next.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.new-zealand-wrap{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+   /*border: 1px solid black;*/
+    margin-top: 120px;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+
+.zealand-image{
+    display: flex;
+    width: 30%;
+    height: 20vh;
+   /*border: 1px solid black;*/
+    background-image: url("/assets/zealand.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.zealand-text{
+    display: flex;
+    width: 20%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/New\ Zeland.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.zealand-spot{
+    display: flex;
+    width: 30%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/20+\ Spots\ 2D\ &\ 3N.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.zealand-icon{
+    display: flex;
+    width: 10%;
+    height: 20vh;
+    /*border: 1px solid black;*/
+    background-image: url("/assets/ic_round-navigate-next.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.package-wrap{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  /*border: 1px solid black;*/
+    position: relative;
+
+
+}
+
+
+.package-heading{
+    display: flex;
+    width: 50%;
+    height: 10vh;
+   /*border: 1px solid black;*/
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/Best\ Packages\ For\ You.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   position: absolute;
+   margin-left: 300px;
+   margin-top: 20px;
+}
+
+.packages-menu{
+    display: flex;
+    width: 80%;
+    height: 10vh;
+   /*border: 1px solid black;*/
+    margin-top: 120px;
+    margin-left: 100px;
+}
+
+.packages-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.menu-links{
+    display: flex;
+    width: 10%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: green;
+    border-radius: 5px;
+
+}
+
+
+.back-pack{
+    display: flex;
+    width: 15%;
+    height: 10vh;
+   /*border: 1px solid black;*/
+    margin-left: 200px;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    border-radius: 5px;
+}
+
+.south-asia{
+    display: flex;
+    width: 15%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    border-radius: 5px;
+}
+
+
+.honey-moon{
+    display: flex;
+    width: 15%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    border-radius: 5px;
+}
+
+
+.europe{
+    display: flex;
+    width: 15%;
+    height: 10vh;
+   /*border: 1px solid black;*/
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    border-radius: 5px;
+}
+
+.more{
+    display: flex;
+    width: 15%;
+    height: 10vh;
+   /*border: 1px solid black;*/
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    border-radius: 5px;
+}
+
+.package-image-content-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 260px;
+    
+}
+
+.indo-image-wrap{
+    display: flex;
+    flex-direction: row;
+    width:30%;
+    height: 50vh;
+   /*border: 1px solid black;*/
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 20px;
+    
+}
+
+.indo-image{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/indo-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.indo-text-box{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 200px;
+
+}
+
+.indo-price-day-wrap{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+ /*border: 1px solid black;*/
+    position: absolute;
+    
+}
+
+.indo-days{
+    display: flex;
+    width: 50%;
+    height: 4vh;
+    margin-left: 10px;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/3\ Days\,\ 2\ NIghts.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.indo-price{
+    display: flex;
+    width: 30%;
+    height: 4vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+    margin-left: 260px;
+    background-image: url("/assets/Person.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.indo-paragraph{
+    display: flex;
+    width: 90%;
+    height: 5vh;
+    /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 240px;
+    background-image: url("/assets/indo-p.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.indo-location-wrap{
+    display: flex;
+    width: 93%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 20px;
+}
+
+
+.indo-location-icon{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/ep_location.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.indo-country{
+    display: flex;
+    width: 60%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/Indonesiatext.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 20px;
+    
+}
+
+
+.indo-more-link{
+    display: flex;
+    width: 30%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-left: 250px;
+}
+
+.indo-more-link a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.indo-more-link a:hover{
+    text-decoration: underline;
+}
+
+
+
+.japan-image-wrap{
+    display: flex;
+    width:30%;
+    height: 50vh;
+   /*border: 1px solid black;*/
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 460px;
+}
+
+
+.japan-image{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/japan-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.japan-text-box{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 200px;
+
+}
+
+.japan-price-day-wrap{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+}
+
+
+.japan-days{
+    display: flex;
+    width: 50%;
+    height: 4vh;
+    margin-left: 10px;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/3\ Days\,\ 2\ NIghts.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.japan-price{
+    display: flex;
+    width: 30%;
+    height: 4vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-left: 260px;
+    background-image: url("/assets/Person.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.japan-paragraph{
+    display: flex;
+    width: 90%;
+    height: 5vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 240px;
+    background-image: url("/assets/japan-p.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+.japan-location-wrap{
+    display: flex;
+    width: 93%;
+    height: 5vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 20px;
+}
+
+.japan-location-icon{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+/*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/ep_location.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.japan-country{
+    display: flex;
+    width: 50%;
+    height: 5vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/Japan.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.japan-more-link{
+    display: flex;
+    width: 30%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-left: 250px;
+}
+
+.japan-more-link a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.japan-more-link a:hover{
+    text-decoration: underline;
+}
+
+
+.mountain-image-wrap{
+    display: flex;
+    width:30%;
+    height: 50vh;
+   /*border: 1px solid black;*/
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 900px;
+}
+
+.mountain-image{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/mountain-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mountain-text-box{
+    display: flex;
+    width: 30%;
+    height: 20vh;
+ /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 900px;
+
+}
+
+
+.mountain-price-day-wrap{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+}
+
+.mountain-days{
+    display: flex;
+    width: 50%;
+    height: 4vh;
+    margin-left: 10px;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/3\ Days\,\ 2\ NIghts.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mountain-price{
+    display: flex;
+    width: 30%;
+    height: 4vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+    margin-left: 260px;
+    background-image: url("/assets/Person.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.mountain-paragraph{
+    display: flex;
+    width: 27%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 900px;
+    background-image: url("/assets/Explore\ the\ majestic\ mountains\ and\ landscapes\ day\ and\ nights.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mountain-location-wrap{
+    display: flex;
+    width: 28%;
+    height: 5vh;
+    /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 920px;
+}
+
+.mountain-location-icon{
+    display: flex;
+    width: 10%;
+    height: 5vh;
+  /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/ep_location.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mountain-country{
+    display: flex;
+    width: 50%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    background-image: url("/assets/Mountains.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 40px;
+}
+
+.mountain-more-link{
+    display: flex;
+    width: 30%;
+    height: 5vh;
+   /*border: 1px solid black;*/
+    position: absolute;
+    margin-left: 250px;
+}
+
+.mountain-more-link a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mountain-more-link a:hover{
+    text-decoration: underline;
+}
+
+.discover-more{
+    padding: 10px;
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 550px;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.discover-more:hover{
+    background: none;
+    cursor: pointer;
+    color:red
+}
+
+.Trip-wrap{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    /*border: 1px solid black;*/
+}
+
+.trip-heading{
+    display: flex;
+    width: 40%;
+    height: 10vh;
+     /*border: 1px solid black;*/
+    position: absolute;
+    margin-left: 450px;
+    background-image: url("/assets/Book\ Your\ Next\ Trip\ in\ 3\ Easy\ Steps.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    
+}
+
+.trip-text{
+    display: flex;
+    width: 20%;
+    height: 5vh;
+      /*border: 1px solid black;*/
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 550px;
+    background-image: url("/assets/Easy\ and\ Fast.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.trip-image-container{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    background-image: url("/assets/Group\ 590.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 120px;
+}
+
+.about-us-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+    /*border: 1px solid black;*/
+}
+
+.about-us-container{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    margin-top: 40px;
+}
+
+.about-us-heading{
+    display: flex;
+    width: 40%;
+    height: 10vh;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 350px;
+    background-image: url("/assets/What\ People\ Say\ About\ Us.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about-us-image{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    background-image: url("/assets/Group\ 591.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.subscription-wrap{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+   /* border: 1px solid brown;*/
+    
+}
+
+.subscription-content{
+    display: flex;
+    width: 60%;
+    height: 40vh;
+    /* border: 1px solid brown;*/
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 40px;
+    background-image: url("/assets/Group\ 78.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+
+}
+
+.subscription-icon{
+    display: flex;
+    width: 5%;
+    height: 5vh;
+   /* border: 1px solid brown;*/
+    position: absolute;
+    margin-left: 750px;
+    margin-bottom: 500px;
+    background-image: url("/assets/Group\ 77.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.subscription-header{
+    display: flex;
+    width: 60%;
+    height: 10vh;
+    position: absolute;
+    /* border: 1px solid brown;*/
+    margin-left: 100px;
+    margin-top: 40px;
+    background-image: url("/assets/Subscribe\ to\ get\ information\,\ latest\ news\ and\ other\ interesting\ offers\ about\ Cobham.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.sub-logo{
+    display: flex;
+    width: 10%;
+    height: 10vh;
+    /* border: 1px solid brown;*/
+    margin-top: 350px;
+    position: absolute;
+    margin-left: 100px;
+    background-image: url("/assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.sub-paragraph{
+    display: flex;
+    width: 13%;
+    height: 10vh;
+    /* border: 1px solid brown;*/
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 100px;
+    background-image: url("/assets/Company\ Desc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.sub-nav{
+    display: flex;
+    width: 40%;
+    height: 30vh;
+    /* border: 1px solid brown;*/
+    margin-top: 360px;
+    margin-left: 350px;
+    position: absolute;
+    background-image: url("/assets/Nav\ Columns.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.get-app-logo{
+    display: flex;
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid brown;*/
+    margin-left: 950px;
+    margin-top: 360px;
+}
+
+.facebook-logo{
+    display: flex;
+    width: 5%;
+    height: 5vh;
+/* border: 1px solid brown;*/
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-image: url("/assets/Social.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.instagram-logo{
+    display: flex;
+    width: 5%;
+    height: 5vh;
+    /* border: 1px solid brown;*/
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 20px;
+    background-image: url("/assets/Social\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.google-play-logo{
+    display: flex;
+    width: 15%;
+    height: 10vh;
+   /* border: 1px solid brown;*/
+    margin-top: 80px;
+    position: absolute;
+    margin-left: 10px;
+    background-image: url("/assets/Discover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.sub-email-container{
+    display: flex;
+    width: 50%;
+    height: 5vh;
+    position: absolute;
+   /* border: 1px solid brown;*/
+    margin-top: 150px;
+    margin-left: 150px;
+    
+}
+.email{
+    width: 100%;
+    background-image: url("/assets/Group\ 76.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+.sub-btn{
+    display: flex;
+    width: 15%;
+    padding: 8px;
+    position: absolute;
+    margin-top: 149px;
+    margin-left: 550px;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.sub-btn:hover{
+    background: none;
+    color: red;
+}
