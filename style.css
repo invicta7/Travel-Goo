@@ -33,7 +33,7 @@ nav{
 .logo{
     width: 100px;
     height: 100px;
-    background-image: url(/assets/Travel\ Goo.png");
+    background-image: url("assets/Travel\ Goo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -170,7 +170,7 @@ a:hover{
     margin-top: 30vh;
     width: 50%;
     height: 20vh;
-    background-image: url("/assets/Your\ Imagination\ Is\ Your\ Only\ Limit.png");
+    background-image: url("assets/Your\ Imagination\ Is\ Your\ Only\ Limit.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
