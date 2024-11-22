@@ -10,7 +10,7 @@ html, body{
     margin: 10px;
     height: 100vh;
     width: 100%;
-    background-image: url(assets/stefan-stefancik-6whwCHgsMiA-unsplash\ 1.png);
+    background-image: url(/assets/stefan-stefancik-6whwCHgsMiA-unsplash\ 1.png);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +33,7 @@ nav{
 .logo{
     width: 100px;
     height: 100px;
-    background-image: url("/assets/Travel\ Goo.png");
+    background-image: url(/assets/Travel\ Goo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
